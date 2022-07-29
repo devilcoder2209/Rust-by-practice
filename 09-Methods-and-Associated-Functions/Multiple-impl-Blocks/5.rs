@@ -1,0 +1,24 @@
+// Each struct is allowed to have multiple impl blocks.
+
+// Given (Note this is an example and hence requires no solutions)
+
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+// Using multiple `impl` blocks to rewrite the code below.
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
+
+fn main() {
+    println!("Success!");
+}
